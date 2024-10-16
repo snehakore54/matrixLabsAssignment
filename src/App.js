@@ -6,7 +6,6 @@ import Tokenomics from './components/Tokenomics'
 import Roadmap from './components/Roadmap'
 import ExploreOurDApp from './components/ExploreOurDApp';
 import './App.css';
-import './styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
