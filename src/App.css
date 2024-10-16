@@ -209,12 +209,11 @@ body {
 }
 
 
-/* General styles */
+
 .cntimg.placeholder-cmnt {
-  display: block; /* Ensure it's visible on larger screens */
+  display: block; 
 }
 
-/* Hide content on mobile screens (less than 768px) */
 @media screen and (max-width: 768px) {
   .cntimg.placeholder-cmnt {
     display: none; /* Hide the entire container on mobile */
