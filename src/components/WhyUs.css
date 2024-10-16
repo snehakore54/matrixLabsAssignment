@@ -122,7 +122,7 @@
     }
 
     .whiteButton {
-        width: 80%; /* Button takes more space in mobile */
+        width: 80%; 
         height: 40px;
         font-size: medium;
     }
@@ -133,7 +133,7 @@
 
     .center-container h5 {
         font-size: 14px;
-        padding: 0 10px; /* Padding to avoid text hitting the edges */
+        padding: 0 10px; 
     }
 
     .cntiner {

@@ -1,8 +1,8 @@
 .one-two-card {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     margin: auto;
     margin-top: 3%;
     text-align: center;
@@ -10,10 +10,10 @@
 
 .ttl-container {
     display: flex;
-    gap: 20px; /* Add space between the two cards */
-    justify-content: center; /* Center the two cards horizontally */
-    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
-    margin-top: 20px; /* Margin between header and cards */
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
 }
 
 .one-card-container {
@@ -22,7 +22,7 @@
     padding: 12px 56px;
     border-radius: 15px;
     backdrop-filter: blur(15.7px);
-    background: rgba(12, 43, 47, 0.7); /* Semi-transparent background */
+    background: rgba(12, 43, 47, 0.7); 
     margin-bottom: 4px;
     color: #B0FAFFB2;
     margin-top: 5px;
@@ -75,52 +75,52 @@ ul {
 
 @media (max-width: 768px) {
     .ttl-container {
-        flex-direction: column; /* Stack cards vertically on small screens */
-        align-items: center; /* Center cards */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .one-card-container {
-        width: 90%; /* Full width for smaller screens */
-        padding: 12px 20px; /* Reduced padding */
-        margin: 10px 0; /* Margin between cards */
+        width: 90%; 
+        padding: 12px 20px; 
+        margin: 10px 0; 
     }
 
     .header {
-        font-size: 24px; /* Smaller font size for the header */
+        font-size: 24px; 
     }
 
     .imageDonut {
-        height: 250px; /* Adjust image height for mobile */
-        padding-left: 0; /* Remove left padding on mobile */
+        height: 250px; 
+        padding-left: 0; 
     }
 
     .label {
-        width: auto; /* Allow label width to adjust */
+        width: auto; 
     }
 
     .items {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center the items */
+        flex-direction: column; 
+        align-items: center; 
     }
 }
 
 @media (max-width: 480px) {
     .header {
         font-size: 20px;
-        color: white; /* Further reduce font size for very small screens */
+        color: white; 
     }
     
     .one-card-container {
-        padding: 12px 10px; /* Further reduce padding */
+        padding: 12px 10px; 
     }
 
     .imageDonut {
-        height: 200px; /* Smaller image height for very small screens */
+        height: 200px; 
     }
 
     .list-item {
         display: flex;
-        justify-content: space-evenly; /* Align label and value on opposite sides */
+        justify-content: space-evenly;
         padding: 8px 0;
     }
     

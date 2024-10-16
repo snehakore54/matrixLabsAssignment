@@ -1,4 +1,3 @@
-/* Base Styles */
 .header {
     color: aliceblue;
     text-align: center;
@@ -24,7 +23,7 @@
     color: aliceblue;
   }
   
-  /* Flexbox for the ul and image */
+
   .one-card-items img {
     max-width: 259px; 
     margin-left: 20px; 
@@ -39,11 +38,11 @@
   .one-card-items ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 15px; /* Space between list items */
+    margin-bottom: 15px; 
   }
   
   .one-card-items ul img {
-    margin-right: 10px; /* Space between the image and text */
+    margin-right: 10px; 
   }
   
   .one-card-items ul h5 {
@@ -52,15 +51,15 @@
     font-weight: normal;
   }
   
-  /* Mobile responsiveness */
+  
   @media (max-width: 768px) {
     .one-card-items {
-      flex-direction: column; /* Stack the items on smaller screens */
+      flex-direction: column; 
       text-align: center;
     }
   
     .one-card-items img {
-      margin: 20px 0 0 0; /* Add space between content and image */
+      margin: 20px 0 0 0; 
       max-width: 250px;
     }
   }
