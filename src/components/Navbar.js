@@ -69,68 +69,47 @@ const Navbar = () => {
 
 export default Navbar
 */
-
 import React from 'react';
 import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
-    return (
-        <div>
-            {/* Desktop Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-none d-lg-block">
-                <div className="container">
-                    <div className="img">
-                        <img src='/Frame43094logo.png' alt="Logo" />
-                    </div>
-                    <div className="collapse navbar-collapse">
-                        <div className="navItems navbar-nav">
-                            <a className="nav-link active" href="#sectionFeatures">Features</a>
-                            <a className="nav-link" href="#sectionWhyUs">Why Us</a>
-                            <a className="nav-link" href="#sectionTokenomics">Tokenomics</a>
-                            <a className="nav-link" href="#sectionRoadmap">Roadmap</a>
-                        </div>
-                        <div className="ml-auto">
-                            <button className="logBtn mr-3">Log in</button>
-                            <button className="whiteBtn">Whitepaper</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            {/* Mobile Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-lg-none">
-                <div className="container">
-                    <div className='img'>
-                        <img src='/Frame43094logo.png' alt="Logo" />
-                    </div>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navItems navbar-nav">
-                            <a className="nav-link active" href="#sectionFeatures">Features</a>
-                            <a className="nav-link" href="#sectionWhyUs">Why Us</a>
-                            <a className="nav-link" href="#sectionTokenomics">Tokenomics</a>
-                            <a className="nav-link" href="#sectionRoadmap">Roadmap</a>
-                        </div>
-                        <div className="ml-auto">
-                            <button className="logBtn mr-3">Log in</button>
-                            <button className="whiteBtn">Whitepaper</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="navbar-container">
+        <div className="img">
+          <img src="./Frame43094logo.png" alt="Logo" />
         </div>
-    );
-}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="nav-wrapper"> {/* Wrapper for styling */}
+            <div className="navItems navbar-nav">
+              <a className="nav-link active" href="#sectionFeatures">
+                Features<span className="sr-only">(current)</span>
+              </a>
+              <a className="nav-link" href="#sectionWhyUs">Why Us</a>
+              <a className="nav-link" href="#sectionTokenomics">Tokenomics</a>
+              <a className="nav-link" href="#sectionRoadmap">Roadmap</a>
+            </div>
+          </div>
+          <div className="d-none d-lg-block ml-lg-5">
+            <button className="logBtn mr-3">Log in</button>
+            <button className="whiteBtn">Whitepaper</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
