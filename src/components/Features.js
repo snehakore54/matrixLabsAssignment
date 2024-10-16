@@ -5,7 +5,7 @@ const Features = () => {
   return (
     <div className='container-fluid bg-color'>
       <div className='row justify-content-center'>
-
+      
         <div className='card-container col-12 col-lg-4 d-flex justify-content-center mx-2 mb-3 rounded-top-left'>
           <div className='text-center'> {/* Center the content */}
             <img src="/Rectangle 3.png" alt='rectangle' className='image' />
@@ -28,7 +28,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-
+    
       <div className='row justify-content-center'>
         <div className='card-container col-12 col-lg-6 d-flex justify-content-center mx-2 mb-3 rounded-bottom-left'>
           <div className='text-center'>
