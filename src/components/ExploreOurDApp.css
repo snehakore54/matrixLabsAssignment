@@ -1,0 +1,97 @@
+/*.dapp {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-on {
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px #B0FAFFB2;
+    border-radius: 8px;
+    padding: 20px;
+}*/
+/* Container that centers everything in the viewport */
+.dapp {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00161D; /* Optional background color */
+}
+
+/* Styling for the card that contains text and button */
+.card-on {
+    width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    /*background-color: rgba(255, 255, 255, 0.1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-width: 1px;
+    border-color: #B0FAFF;
+    box-shadow: inset 0px 0px 8px 2px rgba(176, 250, 255, 0.6); 
+}
+
+/* Styling for the header */
+.header {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Special color for 'dApp' in the header */
+.blue-color {
+    color: #00A3FF; /* Light blue color */
+}
+
+/* Styling for the main text content */
+.text {
+    color: #B0FAFF;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Centering button and applying white background and blue text */
+.whiteButn {
+    background-color: white;
+    color: #00A3FF; /* Blue text on white button */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+/* Hover effect for the button */
+.whiteButn:hover {
+    background-color: #e0e0e0; /* Slightly darker white on hover */
+}
+
+@media (max-width: 768px) {
+    .card-on {
+        width: 90%; /* Adjust card width for smaller screens */
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 28px; /* Reduce header size on smaller screens */
+    }
+
+    .text {
+        font-size: 16px; /* Smaller text on mobile */
+    }
+}
+

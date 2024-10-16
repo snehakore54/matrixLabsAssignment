@@ -1,0 +1,67 @@
+/* Base Styles */
+.header {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .one-card-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin-bottom: 40px; 
+    padding: 20px;
+   
+    border-radius: 10px;
+   
+  }
+  
+  .one-card-items h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  
+  /* Flexbox for the ul and image */
+  .one-card-items img {
+    max-width: 259px; 
+    margin-left: 20px; 
+  }
+  
+  .one-card-items ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .one-card-items ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between list items */
+  }
+  
+  .one-card-items ul img {
+    margin-right: 10px; /* Space between the image and text */
+  }
+  
+  .one-card-items ul h5 {
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .one-card-items {
+      flex-direction: column; /* Stack the items on smaller screens */
+      text-align: center;
+    }
+  
+    .one-card-items img {
+      margin: 20px 0 0 0; /* Add space between content and image */
+      max-width: 250px;
+    }
+  }
+  

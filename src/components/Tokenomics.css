@@ -1,0 +1,127 @@
+.one-two-card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.ttl-container {
+    display: flex;
+    gap: 20px; /* Add space between the two cards */
+    justify-content: center; /* Center the two cards horizontally */
+    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+    margin-top: 20px; /* Margin between header and cards */
+}
+
+.one-card-container {
+    width: 538px;
+    height: fit-content;
+    padding: 12px 56px;
+    border-radius: 15px;
+    backdrop-filter: blur(15.7px);
+    background: rgba(12, 43, 47, 0.7); /* Semi-transparent background */
+    margin-bottom: 4px;
+    color: #B0FAFFB2;
+    margin-top: 5px;
+    border-width: 0cap;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.label {
+    font-weight: normal;
+    padding-right: 10px;
+    width: 150px;
+}
+
+.value {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.imageDonut {
+    height: 350px;
+    padding-left: 4%;
+    margin-top: 20px;
+}
+
+.header {
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 27px;
+}
+
+.row-cont{
+    display: flex;
+}
+
+.items{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .ttl-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center cards */
+    }
+
+    .one-card-container {
+        width: 90%; /* Full width for smaller screens */
+        padding: 12px 20px; /* Reduced padding */
+        margin: 10px 0; /* Margin between cards */
+    }
+
+    .header {
+        font-size: 24px; /* Smaller font size for the header */
+    }
+
+    .imageDonut {
+        height: 250px; /* Adjust image height for mobile */
+        padding-left: 0; /* Remove left padding on mobile */
+    }
+
+    .label {
+        width: auto; /* Allow label width to adjust */
+    }
+
+    .items {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center the items */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 20px;
+        color: white; /* Further reduce font size for very small screens */
+    }
+    
+    .one-card-container {
+        padding: 12px 10px; /* Further reduce padding */
+    }
+
+    .imageDonut {
+        height: 200px; /* Smaller image height for very small screens */
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-evenly; /* Align label and value on opposite sides */
+        padding: 8px 0;
+    }
+    
+}
