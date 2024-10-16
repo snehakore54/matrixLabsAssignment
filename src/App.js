@@ -17,7 +17,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
                 <div className='img'>
-                <img src={`${process.env.PUBLIC_URL}/Frame43094logo.png`} alt="Logo" />
+                <img src='\Frame43094logo.png' alt="Logo" />
                 </div>
                 <button
                     className="navbar-toggler"
